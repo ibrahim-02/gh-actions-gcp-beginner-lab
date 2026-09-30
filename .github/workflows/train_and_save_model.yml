@@ -1,9 +1,9 @@
 name: Train and save model to GCS
 
 on:
-  # schedule:
-    # - cron: '0 0 * * *' # Run every day at midnight
-  workflow_dispatch: # Run manually
+  push: 
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
   train_and_save:
